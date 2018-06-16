@@ -1,9 +1,12 @@
 class Student  < User
 
-  attr_accessor :first_name, :last_name
+  attr_accessor :KNOWLEDGE
 
   def initialize
     KNOWLEDGE = []
   end
+
+  def learn(string)
+    KNOWLEDGE << string
 
 end
